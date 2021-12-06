@@ -16,11 +16,11 @@ export default function Navigasyon() {
                             <Nav.Link href="#features">AnaSayfa</Nav.Link>
                             <Nav.Link href="#pricing">İletişim</Nav.Link>
                             <NavDropdown title="Ürünlerimiz" id="collasible-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.4">Koleksiyonumuz</NavDropdown.Item>
+                                <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.1">Ürün-1</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Ürün-2</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Ürün-3</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Koleksiyonumuz</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Nav>
