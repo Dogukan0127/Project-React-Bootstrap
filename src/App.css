@@ -15,3 +15,7 @@
 div.col{
   margin-bottom: 24px;
 }
+
+.urun1 {
+  display: flex;
+}

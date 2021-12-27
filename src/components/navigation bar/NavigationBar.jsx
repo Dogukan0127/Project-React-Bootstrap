@@ -3,13 +3,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Link from 'react-router-dom';
 
-export default function Navigasyon() {
+export default function NavigationBar() {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Ori-Game</Navbar.Brand>
+                    <Navbar.Brand href="#">Ori-Game</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -18,9 +19,8 @@ export default function Navigasyon() {
                             <NavDropdown title="Ürünlerimiz" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.4">Koleksiyonumuz</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.1">Ürün-1</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Ürün-2</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Ürün-3</NavDropdown.Item>
+                                <NavDropdown.Item href="#">Ürün-1</NavDropdown.Item>
+                                <NavDropdown.Item href="#">Ürün-2</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Nav>

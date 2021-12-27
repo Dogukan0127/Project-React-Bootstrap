@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavigationBar from './components/navigation bar/NavigationBar';
+import Content1 from './pages/Contents/Content1';
+import Content2 from './pages/Contents/Content2';
+import Content3 from './pages/Contents/Content3';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/Content1" element={<Content1 />} />
+        <Route path="/Content2" element={<Content2 />} />
+        <Route path="/Content3" element={<Content3 />} />
+      </Routes>
+    </React.StrictMode>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 
